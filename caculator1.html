@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập máy tính 1</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="text" id="number1" >
+<input type="text" id="number2" ><br>
+<button onclick="Cong()" type="button">Addition(+)</button>
+<button onclick="tru()" type="button">Subtraction(-)</button>
+<button onclick="nhan()" type="button">Multiplication(*)</button>
+<button onclick="chia()" type="button">Division(/)</button>
+
+<p id="result"></p>
+
+<script>
+    function Cong(){
+        let num1=Number(document.getElementById('number1').value);
+        let num2=Number(document.getElementById('number2').value);
+        let sum=num1+num2
+        document.getElementById('result').innerText= 'Kết Quả=' +sum
+
+    }
+    function tru(){
+        let num1=Number(document.getElementById('number1').value);
+        let num2=Number(document.getElementById('number2').value);
+        let sub=num1-num2
+        document.getElementById('result').innerText= 'Kết Quả=' +sub
+
+    }
+    function nhan(){
+        let num1=Number(document.getElementById('number1').value);
+        let num2=Number(document.getElementById('number2').value);
+        let mul=num1*num2
+        document.getElementById('result').innerText= 'Kết Quả=' +mul
+
+    }
+    function chia(){
+        let num1=Number(document.getElementById('number1').value);
+        let num2=Number(document.getElementById('number2').value);
+        let divi=num1/num2
+        document.getElementById('result').innerText= 'Kết Quả=' +divi
+
+    }
+</script>
+
+</body>
+</html>
